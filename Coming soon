@@ -8,8 +8,24 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local Section = Tab:AddSection({
-	Name = ""
+Tab:AddToggle({
+	Name = "Delete Seek",
+	Default = false,
+	Callback = game.workspace.SeekMoving:delete()
+	end    
+})
+
+Tab:AddSlider({
+	Name = "WalkSpeed",
+	Min = 1,
+	Max = 21,
+	Default = 15,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "walkspeed",
+	Callback = function(Value)
+		print(Value)
+	end    
 })
 
 OrionLib:Init()
