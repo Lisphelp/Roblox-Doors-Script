@@ -1,7 +1,14 @@
 if game.PlaceId == 6839171747 then
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-
 local Window = OrionLib:MakeWindow({Name = "Lis Phelps's doors hub", HidePremium = false, SaveConfig = true, ConfigFolder = "LisPhelpsconfiguration", IntroEnabled = true, IntroText = "Lis Phelps's Hub"})
+
+--Values--
+
+_g_.is-delete-seek-toggled(value)
+
+--Functions--
+
+
 
 local Section = Tab:AddSection({
 	Name = "Main"
@@ -16,7 +23,7 @@ local Tab = Window:MakeTab({
 Tab:AddToggle({
 	Name = "Delete Seek",
 	Default = false,
-	Callback = game.workspace.SeekMoving:delete()
+	Callback = function(value)
 	end    
 })
 
@@ -32,6 +39,7 @@ Tab:AddSlider({
 		print(Value)
 	end    
 })
+
 
 
 
