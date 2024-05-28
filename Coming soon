@@ -2,6 +2,10 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 
 local Window = OrionLib:MakeWindow({Name = "Lis Phelps's doors hub", HidePremium = false, SaveConfig = true, ConfigFolder = "LisPhelpsconfiguration", IntroEnabled = true, IntroText = "Lis Phelps's Hub"})
 
+local Section = Tab:AddSection({
+	Name = "Main"
+})
+
 local Tab = Window:MakeTab({
 	Name = "Entitys",
 	Icon = "rbxassetid://4483345998",
