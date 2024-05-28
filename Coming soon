@@ -1,4 +1,4 @@
-if game.PlaceId == 6839171747, 6516141723 then
+if game.PlaceId == 6839171747 then
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 local Window = OrionLib:MakeWindow({Name = "Lis Phelps's doors hub", HidePremium = false, SaveConfig = true, ConfigFolder = "LisPhelpsconfiguration", IntroEnabled = true, IntroText = "Lis Phelps's Hub"})
