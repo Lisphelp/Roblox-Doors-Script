@@ -1,4 +1,3 @@
-
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Lis Phelps's doors hub", HidePremium = false, SaveConfig = true, ConfigFolder = "LisPhelpsconfiguration", IntroEnabled = true, IntroText = "Lis Phelps's Hub"})
 
@@ -10,6 +9,7 @@ _g_.is-delete-seek-toggled(value)
 
 
 
+--Tabs--
 
 local Tab = Window:MakeTab({
 	Name = "Entitys",
@@ -17,9 +17,13 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+--Sections--
+
 local Section = Tab:AddSection({
 	Name = "Main"
 })
+
+--Toggles--
 
 Tab:AddToggle({
 	Name = "Delete Seek",
@@ -27,6 +31,8 @@ Tab:AddToggle({
 	Callback = function(value)
 	end    
 })
+
+--sliders--
 
 Tab:AddSlider({
 	Name = "WalkSpeed",
