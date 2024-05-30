@@ -10,14 +10,15 @@ _g_.is-delete-seek-toggled(value)
 
 
 
-local Section = Tab:AddSection({
-	Name = "Main"
-})
 
 local Tab = Window:MakeTab({
 	Name = "Entitys",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Main"
 })
 
 Tab:AddToggle({
